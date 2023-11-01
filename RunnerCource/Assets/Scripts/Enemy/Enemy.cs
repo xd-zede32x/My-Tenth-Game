@@ -14,9 +14,8 @@ public class Enemy : MonoBehaviour
         Die();
     }
 
-
     private void Die()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
